@@ -1,0 +1,10 @@
+# Journal check configuration
+# Controls what the CI check verifies on push. If this file is missing or
+# incomplete, the check SKIPS (green, informational message) — it never errors.
+journal_date: "0921"
+min_words: 80
+required_term_groups:
+  - ["try/except", "try except", "try-except"]
+  - ["type conversion", "convert", "conversion"]
+  - ["input validation", "validate", "validation"]
+min_term_groups: 2
